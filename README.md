@@ -1,11 +1,15 @@
 
-Problem
+**Problem :**
+
 The datasets contain the measures of the song features for roughly 41,000 songs from 1960 to 2019. The target column indicates if a song is a Hit or Flop. Hit songs are the ones that have been featured on the Billboard at least once. There is not a clear answer on which song features are most important in making a song a hit. To solve the problem, me and my team used R to build a variety of prediction models to find out what the most important song features are in modern hit songs and learn which model works best for such a dataset.
 
-Goal
+**Goal :**
+
 The goal is to predict whether a song would be a hit or a flop by examining audio features of songs from 1960 to 2019. For example, if a music studio were to start a new project, would features like loudness, acousticness impact the song's popularity more than others?
 
-Description of the Dataset : The Kaggle Spotify hit dataset contains 6 datasets partitioned by decade. 
+**Description of the Dataset : **
+
+The Kaggle Spotify hit dataset contains 6 datasets partitioned by decade. 
 
 Name | Type | Description |
 ---------------------------
@@ -13,7 +17,7 @@ Track | Character |
 
 Name	| Type	| Description
 ------|--------|--------------
-Track	character	The name of the track.
+Track	| character	| The name of the track.
 Artist	character	The name of the Artist.
 Uri	character	The Spotify url for the track.
 Danceability	double	Describes how suitable a track is for dancing. 0 to 1 indicates  Low to High
