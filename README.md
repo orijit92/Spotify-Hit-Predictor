@@ -7,7 +7,7 @@ The datasets contain the measures of the song features for roughly 41,000 songs 
 
 The goal is to predict whether a song would be a hit or a flop by examining audio features of songs from 1960 to 2019. For example, if a music studio were to start a new project, would features like loudness, acousticness impact the song's popularity more than others?
 
-**Description of the Dataset : **
+**Description of the Dataset :**
 
 The Kaggle Spotify hit dataset contains 6 datasets partitioned by decade. 
  
@@ -35,6 +35,7 @@ Sections	| integer	| Number of sections of a particular track
 Target	| integer	| Whether the track is a hit (1) or not (0)
 
 
+
 We started with doing an exploratory analysis and analyzed how several song features changed over the decades.
 
 **Exploratory Analysis :**
@@ -53,20 +54,20 @@ Hit Song vs. Non-Hit Song Instrumentalness Comparison:
 Method:  Since mode, time signature, key, and decade are categorical variables, we factored these variables. We re-coded mode 0 as minor and 1 as major and left the base level as minor. The default base level for time signature was set as 4, since 4/4 time is one of the most common time signatures when it comes to music. For key, we converted the numerical values from the source data (0 to 11), to their corresponding keys where 0 = C. The default base level of 0 = C was kept.
 We executed 3 regression runs. The first run contained all the data over the 6 decades. The second run comprised data over the last 3 decades i.e. 2010s, 2000s and 1990s. Our final run contained data over the earlier 3 decades i.e. 1960s, 1970s and 1980s. After running the model on the validation set, we used the validation set to plot the ROC curve, showing the tradeoff between sensitivity and specificity. Additionally, we used the coords() function to determine the value for the best threshold represented on the ROC curve as the point furthest away from the line of no discrimination (appendix 2.1). 
 
-For Dataset containing songs of all Decades (1960-2019):
+**For Dataset containing songs of all Decades (1960-2019):**
 
 Reviewing the results of the logistic regression and p values, danceability, energy, loudness, mode, speechiness, acousticness, and instrumentalness were most significant predictors because their p-values were the smallest. Other significant variables include valence, tempo, and time signature. Hit songs are more likely to have higher danceability, valence, loudness, and are faster. Additionally, hit songs are more likely to be songs with 4 beats/measure, major key, and in keys C#, D#, F, F#, G#, A#, and B compared to songs in the key C. Correspondingly, songs with higher energy, speechiness, acousticness, and instrumentalness tend to be flops.
 
 ![Logistic Regression All decades](https://user-images.githubusercontent.com/85646063/173940453-6c0b2639-b287-46f9-84ed-baf90b4842cd.png)
 
-For Dataset containing songs of the past 3 decades (1990-2019) :
+**For Dataset containing songs of the past 3 decades (1990-2019) :**
 
 Reviewing the results of the logistic regression , danceability, energy, loudness, mode, speechiness, acousticness, liveness, valence, time signature, and instrumentalness were most significant predictors. Hit songs are more likely to have higher danceability, loudness, and instrumentalness. Additionally, hit songs are more likely to be songs with 4 beats/measure and in major key. Correspondingly, songs with higher  energy, acousticness, liveness, valence, and time signature (3) tend to be flops.
 
 ![image](https://user-images.githubusercontent.com/85646063/173940555-784ee936-396c-4660-b377-ed014135690b.png)
 
 
-For Dataset containing songs of the earliest 3 decades (1960-1989):
+**For Dataset containing songs of the earliest 3 decades (1960-1989):**
 
 Reviewing the results of the logistic regression and p values, danceability, loudness, mode, tempo, speechiness, acousticness, time signature, instrumentalness were most significant predictors because their p-values were the smallest. Hit songs are more likely to have higher danceability, loudness, and are faster. Additionally, hit songs are more likely to be songs with 4 beats/measure and major key. Correspondingly, songs with higher speechiness, acousticness, instrumentalness, and songs with 5 beats per bar tend to be flops.
 After running confusion matrices (appendices 2.1, 2.4, 2.6) for all groups described above, we see an accuracy of 73.31% for all six decades, 79.65% for 1990-2019, 71.62% for 1960-1989.
