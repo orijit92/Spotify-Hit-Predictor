@@ -10,32 +10,29 @@ The goal is to predict whether a song would be a hit or a flop by examining audi
 **Description of the Dataset : **
 
 The Kaggle Spotify hit dataset contains 6 datasets partitioned by decade. 
-
-Name | Type | Description |
----------------------------
-Track | Character | 
+ 
 
 Name	| Type	| Description
 ------|--------|--------------
 Track	| character	| The name of the track.
-Artist	character	The name of the Artist.
-Uri	character	The Spotify url for the track.
-Danceability	double	Describes how suitable a track is for dancing. 0 to 1 indicates  Low to High
-Energy	double	Measure of intensity and activity. 0 to 1 indicates  Low to High
-Key	integer	The key of the track. 0 to 11 indicates C note to B note
-Loudness	double	Loudness of track in decibels
-Mode	integer	Modality(Major or Minor) of a track
-Speechiness	double	Presence of Spoken words in a track. 0 to 1 indicates Low to High
-Acousticness	double	Measure of the acousticness of track. 0 to 1 indicates Low to High
-Instrumentalness	double	Likelihood of a track containing no vocals. 0 to 1 indicates Low to High
-Liveness	double	Presence of an audience in the recording.0 to 1 indicates Low to High
-Valence	double	Musical positiveness conveyed by a track. 0 to 1 indicates Low to High
-Tempo	double	Tempo of a track in BPM(Beats per Minute)
-Duration_ms	integer	Duration of the track in milliseconds
-Time_signature	integer	Overall time signature of a track (1,2,3,4 or 5)
-Chorus_hit	double	Timing of the start of chorus
-Sections	integer	Number of sections of a particular track
-Target	integer	Whether the track is a hit (1) or not (0)
+Artist	| character	| The name of the Artist.
+Uri	| character	| The Spotify url for the track.
+Danceability	| double	| Describes how suitable a track is for dancing. 0 to 1 indicates  Low to High
+Energy	| double	| Measure of intensity and activity. 0 to 1 indicates  Low to High
+Key	| integer	| The key of the track. 0 to 11 indicates C note to B note
+Loudness	| double	| Loudness of track in decibels
+Mode	| integer	| Modality(Major or Minor) of a track
+Speechiness	| double	| Presence of Spoken words in a track. 0 to 1 indicates Low to High
+Acousticness	| double	| Measure of the acousticness of track. 0 to 1 indicates Low to High
+Instrumentalness	| double	Likelihood of a track containing no vocals. 0 to 1 indicates Low to High
+Liveness	| double	| Presence of an audience in the recording.0 to 1 indicates Low to High
+Valence	| double	| Musical positiveness conveyed by a track. 0 to 1 indicates Low to High
+Tempo	| double	| Tempo of a track in BPM(Beats per Minute)
+Duration_ms	| integer	| Duration of the track in milliseconds
+Time_signature	| integer	| Overall time signature of a track (1,2,3,4 or 5)
+Chorus_hit	| double	| Timing of the start of chorus
+Sections	| integer	| Number of sections of a particular track
+Target	| integer	| Whether the track is a hit (1) or not (0)
 ![image](https://user-images.githubusercontent.com/85646063/173953147-3f86ebee-fdac-4011-b075-fafeaece1af0.png)
 
 
