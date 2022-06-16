@@ -64,7 +64,8 @@ Reviewing the results of the logistic regression and p values, danceability, ene
 
 Reviewing the results of the logistic regression , danceability, energy, loudness, mode, speechiness, acousticness, liveness, valence, time signature, and instrumentalness were most significant predictors. Hit songs are more likely to have higher danceability, loudness, and instrumentalness. Additionally, hit songs are more likely to be songs with 4 beats/measure and in major key. Correspondingly, songs with higher  energy, acousticness, liveness, valence, and time signature (3) tend to be flops.
 
-![image](https://user-images.githubusercontent.com/85646063/173940555-784ee936-396c-4660-b377-ed014135690b.png)
+![image](https://user-images.githubusercontent.com/85646063/173976060-256db103-9c4d-43be-ad6a-0b4fe3ff925d.png)
+
 
 
 **For Dataset containing songs of the earliest 3 decades (1960-1989):**
@@ -72,7 +73,8 @@ Reviewing the results of the logistic regression , danceability, energy, loudnes
 Reviewing the results of the logistic regression and p values, danceability, loudness, mode, tempo, speechiness, acousticness, time signature, instrumentalness were most significant predictors because their p-values were the smallest. Hit songs are more likely to have higher danceability, loudness, and are faster. Additionally, hit songs are more likely to be songs with 4 beats/measure and major key. Correspondingly, songs with higher speechiness, acousticness, instrumentalness, and songs with 5 beats per bar tend to be flops.
 After running confusion matrices (appendices 2.1, 2.4, 2.6) for all groups described above, we see an accuracy of 73.31% for all six decades, 79.65% for 1990-2019, 71.62% for 1960-1989.
 
-![image](https://user-images.githubusercontent.com/85646063/173940697-7d436b8c-ee6f-4140-a317-31ca1de1c2f6.png)
+![image](https://user-images.githubusercontent.com/85646063/173976107-1dccfdee-1262-4e12-a8a4-bfcbda709167.png)
+
 
 
 
