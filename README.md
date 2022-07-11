@@ -77,6 +77,16 @@ After running confusion matrices (appendices 2.1, 2.4, 2.6) for all groups descr
 
 Decision Tree :
 
+![image](https://user-images.githubusercontent.com/85646063/178332977-457ac479-99cb-48e3-98ad-7d75004dab52.png)
+
+
+We can wee that instrumentalness is the most important song feature deciding if a song would be a hit.
+
+
+
+![image](https://user-images.githubusercontent.com/85646063/178333012-1b40b556-1323-4cab-9e1f-e7ffa8ef39d7.png)
+
+![image](https://user-images.githubusercontent.com/85646063/178333032-645cb43e-0558-461d-a10c-a9171b19dc0c.png)
 
 RANDOM FOREST
 
