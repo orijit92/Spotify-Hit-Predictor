@@ -75,7 +75,7 @@ After running confusion matrices (appendices 2.1, 2.4, 2.6) for all groups descr
 
 ![image](https://user-images.githubusercontent.com/85646063/173976107-1dccfdee-1262-4e12-a8a4-bfcbda709167.png)
 
-Decision Tree :
+**Decision Tree :**
 
 ![image](https://user-images.githubusercontent.com/85646063/178332977-457ac479-99cb-48e3-98ad-7d75004dab52.png)
 
