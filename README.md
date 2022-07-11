@@ -82,11 +82,14 @@ Decision Tree :
 
 We can wee that instrumentalness is the most important song feature deciding if a song would be a hit.
 
-Logistic Regression:
-ROC Curve and Confusion Matrix (all decades)
+**Logistic Regression:**
+
+**ROC Curve and Confusion Matrix (all decades)**
 
 
 ![image](https://user-images.githubusercontent.com/85646063/178333012-1b40b556-1323-4cab-9e1f-e7ffa8ef39d7.png)
+
+**Roc Curve and Confusion Matrix (1990-2010s):**
 
 ![image](https://user-images.githubusercontent.com/85646063/178333032-645cb43e-0558-461d-a10c-a9171b19dc0c.png)
 
