@@ -29,7 +29,7 @@ ggplot(data = spotify.df,aes(x = valence, y = danceability, color=target)) +
   geom_point(alpha = 0.4 ) +
   ggtitle(" Danceability vs Valence")
 
-#########################################################################
+########################################################################
 
 #separate data into decades
 sixties.df <- spotify.df[spotify.df$Decade == 1960,]
