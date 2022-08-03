@@ -80,7 +80,7 @@ After running confusion matrices (appendices 2.1, 2.4, 2.6) for all groups descr
 ![image](https://user-images.githubusercontent.com/85646063/178332977-457ac479-99cb-48e3-98ad-7d75004dab52.png)
 
 
-We can wee that instrumentalness is the most important song feature deciding if a song would be a hit.
+We can see that instrumentalness is the most important song feature deciding if a song would be a hit.
 
 **Logistic Regression:**
 
@@ -99,11 +99,11 @@ Since a decision tree can encounter over-fitting issues and it can also ignore e
 
 Method:
 
-For this model, I didn't had to partition the dataset into training and validation sets since the random forest pick a sample with replacement from the dataset as its training set for every individual tree. Those not considered in the training set for a specific tree are going to be used later on to test the prediction power. The records that were not used to build a tree are referred to as Out-Of-Bag (OOB).
+For this model, I didn't have to partition the dataset into training and validation sets since random forest picks a sample with replacement from the dataset as its training set for every individual tree. Those not considered in the training set for a specific tree will be used later on to test the prediction power. The records that were not used to build a tree are referred to as Out-Of-Bag (OOB).
 
-At first, I ran the model with the default values (number of trees 500, variables to consider at each splitting node 4) for the whole database. I ended up getting an OOB error of 19.01%, which translates into 80.99% of accuracy. It came to my mind that maybe different tastes for music along the decades could be canceling the effects from the predictors to the target variable (the characteristics that made a hit in the 60s might be different from those in the 2010s).
+At first, I ran the model with the default values (number of trees 500, variables to consider at each splitting node 4) for the whole database. I ended up getting an OOB error of 19.01%, which translates into 80.99% of accuracy. It came to my mind that maybe different tastes for music along the decades could be cancelling the effects from the predictors of the target variable (the characteristics that made a hit in the 60s might be different from those in the 2010s).
 
-Since we are trying to predict a hit or a flop as for today, and we also know that the more data the better (as long as it doesn't contain errors or misleading info like it could be from other decades taste for songs), I decided to try the latest data adding the following decade each time and looking for the accuracy behavior.
+Since we are trying to predict a hit or a flop as of today, and we also know that the more data the better (as long as it doesn't contain errors or misleading info like song data from other decades), I decided to try the latest data adding data from the preceding decade each time and looking for the accuracy behavior.
 
 We got:
 
@@ -114,9 +114,9 @@ Considered data	| OOB Error
 2010s, 2000s and 1990s |	14.9%
 2010s,2000s, 90s and 80s |	16.51 %
 
-We can notice that when considering the 80s, a lot of noise and confusion was added to the model, losing prediction power. So, I consider utilizing only the data conformed from the 90s, 2000s, and 2010s.
+We can notice that when considering the data in the 80s, a lot of noise and confusion was added to the model, losing prediction power. So, I considered utilizing only the data from the 90s, 2000s, and 2010s. (least OOB error)
 
-As for the next step, I searched for a proper number of trees to consider. To do so, I plotted the Out-of-Bag errors by the number of trees considered in the model. As we can see in FIG1. 500 trees look to be a good number of trees since the errors are not decreasing anymore in a meaningful way, it looks like by 500 trees we are already observing convergence.
+As for the next step, I tried to fix the number of trees that would best suit the model. To do so, I plotted the Out-of-Bag errors by the number of trees considered in the model. As we can see in FIG1. 500 trees looks to be a good number of trees since the error is not decreasing anymore. It seems that by 500 trees, we are already observing convergence.
 
 Then, we search for the optimal number of variables to consider at each split.
 
